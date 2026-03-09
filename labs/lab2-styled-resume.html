@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Harayo (combined)</title>
+    <style>
+        /* === COMBINED CSS === */
+        body {
+            background: #f0f4f8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume {
+            width: 800px;
+            margin: 15px auto;
+            background: white;
+            border: 2px solid #34495e;
+            box-sizing: border-box;
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 30px;
+            flex-wrap: wrap; /* responsiveness */
+        }
+
+        .header div:first-child {
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 38px;
+            color: #2c3e50;
+        }
+
+        .role {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 6px 15px;
+            margin-top: 8px;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        /* PHOTO */
+        .photo img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 6px solid #3498db;
+            object-fit: cover;
+            background: #eef5fc; /* if image missing */
+        }
+
+        /* MIDDLE SECTION (profile) */
+        .pink-section {
+            background: #e1f0fa;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .pink-section h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #1f4a7a;
+        }
+
+        .pink-section p {
+            margin: 10px 0;
+            line-height: 1.5;
+            color: #1f3a57;
+        }
+
+        /* MAIN CONTENT (skills / education) */
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 40px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #b0d0ee;
+            padding-bottom: 5px;
+        }
+
+        /* left / right sections are just blocks inside .content */
+        .left, .right {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #1e3a5f;
+        }
+
+        p {
+            margin: 8px 0;
+            color: #1e3a5f;
+        }
+
+        /* small adjustments */
+        .right p {
+            margin: 5px 0;
+        }
+
+        /* ensure strong tags stand out */
+        strong {
+            color: #1f568b;
+        }
+
+        /* optional: responsive for smaller screens */
+        @media (max-width: 850px) {
+            .resume {
+                width: 95%;
+                margin: 10px auto;
+            }
+            .header {
+                gap: 25px;
+            }
+            .header h1 {
+                font-size: 32px;
+            }
+            .photo img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .content {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+
+        <div class="header">
+            <div>
+                <h1>Karla Mae Harayo</h1>
+                <span class="role">BSIT Student</span>
+            </div>
+            <div class="photo">
+                <!-- image placeholder: if karla-profile.jpg missing, shows alt + background -->
+                <img src="../assets/images/karla-profile.jpg" alt="Karla's Profile Picture">
+            </div>
+        </div>
+
+        <div class="pink-section">
+            <h2>PROFILE</h2>
+            <p>
+                I am a dedicated second-year BSIT student with a strong interest in technology and problem-solving. 
+                I am a fast learner who enjoys working on digital projects and collaborating with a team to achieve goals.
+            </p>
+            <p>
+                Email: daeeeakarlota@gmail.com <br>
+                Phone: 09554200783
+            </p>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h3>SKILLS</h3>
+                <ul>
+                    <li><strong>Technical:</strong> Basic Java Programming, SQL Database Management, and UI/UX Design.</li>
+                    <li><strong>Tools:</strong> Microsoft Office Suite and Visual Studio Code.</li>
+                    <li><strong>Soft Skills:</strong> Strong communication, adaptability, and attention to detail.</li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h3>EDUCATION</h3>
+                <p>
+                    Bachelor of Science in Information Technology <br>
+                    Second Year College Student
+                </p>
+
+                <h3>EXPERIENCE</h3>
+                <p>
+                    <strong>Academic Projects</strong>
+                </p>
+                <ul>
+                    <li>Developed a basic Database System using SQL for school activities.</li>
+                    <li>Participated in group coding projects focused on Object-Oriented Programming.</li>
+                    <li>Assisted in designing user-friendly wireframes for class assignments.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- note: the original didn't include university name in education, but kept as you had -->
+</body>
+</html>
